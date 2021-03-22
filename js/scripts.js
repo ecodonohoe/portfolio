@@ -30,6 +30,7 @@
         }
     });
 
+
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
@@ -40,3 +41,25 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+
+var txt = "donohoe";
+var speed = 100; /* The speed/duration of the effect in milliseconds */
+var i = 0;
+
+
+    function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("name").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+
+        }
+    }
+     
+
+    typeWriter(txt); 
+   
+
+
+
